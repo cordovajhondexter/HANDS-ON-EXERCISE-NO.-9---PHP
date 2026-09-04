@@ -1,0 +1,15 @@
+CREATE DATABASE faculty_db;
+
+USE faculty_db;
+
+CREATE TABLE faculty (
+    faculty_id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(50) NOT NULL,
+    middle_name VARCHAR(50),
+    last_name VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    gender VARCHAR(20) NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    position VARCHAR(100) NOT NULL,
+    salary DECIMAL(10,2) NOT NULL
+);
